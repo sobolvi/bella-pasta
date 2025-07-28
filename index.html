@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">   
+  <title> "Bella Pasta" </title>
+ <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+
+<style>
+body { margin: 0; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active {
+  background-color: #5C4033;
+}
+#example1 {
+  border: 1px solid black;
+  padding: 220px; 
+  background-image: url("restaurantback.png");
+  background-repeat: no-repeat;
+  background-size: cover;           
+  background-position: center; 
+}
+#bottom {
+  
+  background-color: #5C4033; 
+}
+.overlay-box {
+  background: rgba(255, 255, 255, 0.2); 
+  width: 300px;
+  height: 330px;
+  margin: 20px ;
+  padding: 10px;
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  position: static;
+}
+#headline {
+  color: #ededed;
+  text-align: justify ;
+  font-size: 35px;
+  text-decoration-line: underline ;
+  text-decoration-color: #3D2B1F;
+  font-family: 'Marmelad', sans-serif;
+}
+.logo {
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      height: 35px;
+}
+.info {
+  color: #ededed;  
+  font-size: 19px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  margin: 10px ;
+  padding: 2px;
+}
+</style>
+</head>
+<body>
+  
+<ul>
+  <li><a class="active" href="new-file-2.html">Головна</a></li>
+  <li><a href="restaurants.html">Ресторани</a></li>
+  <li><a href="aboutus.html">Про нас</a></li>
+  <li><a href="ourmenu.html">Меню</a></li>
+  <li><a href="contact.html">Контакти</a></li>
+   <img src="logo.png" alt="Bella Pasta" class="logo">
+</ul>
+ 
+<div style="padding: 0px; background-color: #5C4033; color: white;"> 
+<div id="example1"></div>
+<p id="headline"><i>"Спецпропозиції та новинки"</i></p>
+<div style="display: flex; flex-wrap: wrap;">
+     <div class="overlay-box"><img src="breakfast.png" alt="breakfast" style="width:290px; height:275px; margin: 0 auto; border-radius: 10px; display: block;">
+   <p class="info">Сніданок за 15 хв</p></div>
+     <div class="overlay-box"><img src="agent.png" alt="agent" style="width:290px; height:275px; margin: 0 auto; border-radius: 10px; display: block;">
+   <p class="info">Стань таємним агентом нашого ресторану!</p></div>
+     <div class="overlay-box"><img src="present.png" alt="present1" style="width:290px; height:275px; margin: 0 auto; border-radius: 10px; display: block;">
+   <p class="info">Даруємо 150 грн за спізнення!</p></div>
+     <div class="overlay-box"><img src="presssent.png" alt="present2" style="width:290px; height:275px; margin: 0 auto; border-radius: 10px; display: block;">
+   <p class="info">Знижка іменинникам 20% </p></div>
+     <div class="overlay-box"><img src="pressent.png" alt="present3" style="width:290px; height:275px; margin: 0 auto; border-radius: 10px; display: block;">
+   <p class="info">Запрошуйте друзів і отримайте знижку 30% </p></div>
+</div>
+<div id="bottom"></div>
+</body>
+</html>

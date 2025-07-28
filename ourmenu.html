@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">   
+  <title> "Bella Pasta" </title>
+  <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+<style>
+body { margin: 0; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li { float: left; }
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) { background-color: #111; }
+.active { background-color: #5C4033; }
+
+#example1 {
+  border: 1px solid black;
+  padding: 220px; 
+  background-image: url("https://images.squarespace-cdn.com/content/v1/63dde481bbabc6724d988548/34b08790-2d2b-4a08-bca7-89541b24ccea/Brown+Dining+Room?format=2500w");
+  background-repeat: no-repeat;
+  background-size: cover;           
+  background-position: center; 
+}
+
+#bottom { background-color: #5C4033; }
+
+.overlay-box1 {
+  background: rgba(255, 255, 255, 0.2);
+  width: 550px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 10px;
+}
+
+.overlay-box1.small {
+  width: 430px;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 45%;
+}
+.overlay-box1 .info {
+  color: #ededed;
+  font-size: 19px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  margin: 0;
+  padding: 10px 0;
+}
+.overlay-box {
+  background: rgba(255, 255, 255, 0.2); 
+  width: 300px;
+  height: 330px;
+  margin: 20px ;
+  padding: 10px;
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  position: static;
+}
+#headline {
+  color: #ededed;
+  text-align: justify ;
+  font-size: 35px;
+  text-decoration-line: underline ;
+  text-decoration-color: #3D2B1F;
+  font-family: 'Marmelad', sans-serif;
+  margin-left: 80px;
+}
+.logo {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  height: 35px;
+}
+.info1 {
+  font-size: 35px;
+  text-decoration-line: underline;
+  text-decoration-color: #3D2B1F;
+  font-family: 'Marmelad', sans-serif;  
+  color: #ededed;
+  text-align: left;
+  margin: 0;
+}
+.info {
+  font-size: 19px;
+  font-family: "Courier New", Courier, monospace;
+  color: #ededed;  
+  text-align: left;
+  margin: 10px 0;
+}
+</style>
+</head>
+<body>
+  
+<ul>
+  <li><a href="new-file-2.html">Головна</a></li> 
+  <li><a href="restaurants.html">Ресторани</a></li>
+  <li><a href="aboutus.html">Про нас</a></li>
+  <li><a class="active" href="ourmenu.html">Меню</a></li>
+  <li><a href="contact.html">Контакти</a></li>
+  <img src="logo.png" alt="Bella Pasta" class="logo">
+</ul>
+ 
+<div style="padding: 0px; background-color: #5C4033; color: white;"> 
+  <div id="example1"></div>
+  <p id="headline"><i>Популярні категорії</i></p>
+  <div style="display: flex; flex-wrap: wrap;">
+
+    <div class="overlay-box1">
+      <div class="text-column">
+        <p class="info1">Кругла піца</p>
+        <p class="info">від 189 грн</p>
+      </div>
+      <img src="https://images.pexels.com/photos/1049626/pexels-photo-1049626.jpeg" 
+           alt="pizza" 
+           style="width:390px; height:300px; border-radius: 10px;">
+    </div>
+
+    <div class="overlay-box1">
+      <div class="text-column">
+        <p class="info1">Амареті</p>
+        <p class="info">від 200 грн</p>
+      </div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiNwrcpV9amB6ERrd0fMKxKg3jO0Qjo6vZTg&s" 
+           alt="amaretti" 
+           style="width:390px; height:300px; border-radius: 10px;">
+    </div>
+
+    <div class="overlay-box1 small">
+      <div class="text-column">
+        <p class="info1">Лазанья</p>
+        <p class="info">від 220 грн</p>
+      </div>
+      <img src="https://images.pexels.com/photos/5949884/pexels-photo-5949884.jpeg" 
+           alt="lasagna" 
+           style="width:250px; height:300px; border-radius: 10px;">
+     </div>
+
+    <div class="overlay-box1 small">
+      <div class="text-column">
+        <p class="info1">Паста</p>
+        <p class="info">від 280 грн</p>
+      </div>
+      <img src="https://images.pexels.com/photos/116738/pexels-photo-116738.jpeg" 
+           alt="pasta" 
+           style="width:250px; height:300px; border-radius: 10px;">
+     </div>
+
+    <div class="overlay-box1">
+      <div class="text-column">
+        <p class="info1">Різото</p>
+        <p class="info">від 260 грн</p>
+      </div>
+      <img src="https://images.pexels.com/photos/16789511/pexels-photo-16789511.jpeg" 
+           alt="rizoto" 
+           style="width:390px; height:300px; border-radius: 10px;">
+    </div>
+
+    <div class="overlay-box1">
+      <div class="text-column">
+        <p class="info1">Тірамісу</p>
+        <p class="info">від 125 грн</p>
+      </div>
+      <img src="https://images.pexels.com/photos/29683251/pexels-photo-29683251.jpeg" 
+           alt="tiramisu" 
+           style="width:400px; height:300px; border-radius: 10px;">
+    </div>
+
+     <div class="overlay-box">
+      <div class="text-column">
+        <p class="info1">Оссобуко</p>
+        <p class="info">від 295 грн</p>
+      </div>
+      <img src="https://lime-sushi.com/wa-data/public/shop/products/36/00/36/images/231/231.300@2x.jpg" 
+           alt="osobuko" 
+           style="width:300px; height:200px; border-radius: 10px;">
+     </div>
+ 
+         <div class="overlay-box1">
+      <div class="text-column">
+        <p class="info1">Аранчіні</p>
+        <p class="info">від 330 грн</p>
+      </div>
+      <img src="https://media.istockphoto.com/id/1207374655/photo/homemade-classic-arancini-di-riso-crispy-sicilian-rice-balls-stuffed-with-mozzarella-cheese.jpg?b=1&s=612x612&w=0&k=20&c=lvwJUNdh7dEQMSW4XRfoOM2n8Q0PPdDRcQWchHyqWGA=" 
+           alt="aranchini" 
+           style="width:390px; height:300px; border-radius: 10px;">
+    </div>
+ 
+     <div class="overlay-box">
+      <div class="text-column">
+        <p class="info1">Салат Капрезе</p>
+        <p class="info">від 225 грн</p>
+      </div>
+      <img src="https://sweetnewroots.com/wp-content/uploads/2023/01/Easy-Caprese-Salad-Cover-Image-768x512.jpg" 
+           alt="salad" 
+           style="width:300px; height:200px; border-radius: 10px;">
+     </div>
+ 
+     <div class="overlay-box">
+      <div class="text-column">
+        <p class="info1">Семіфредо</p>
+        <p class="info">від 365 грн</p>
+      </div>
+      <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-441616_10-89e3668.jpg" 
+           alt="semifredo" 
+           style="width:300px; height:240px; border-radius: 10px;">
+     </div>
+
+     <div class="overlay-box1 small">
+      <div class="text-column">
+        <p class="info1">Равіолі</p>
+        <p class="info">від 250 грн</p>
+      </div>
+      <img src="https://images.pexels.com/photos/13669035/pexels-photo-13669035.jpeg" 
+           alt="ravioli" 
+           style="width:250px; height:300px; border-radius: 10px;">
+     </div>
+  
+         <div class="overlay-box1">
+      <div class="text-column">
+        <p class="info1">Лимонна картопля</p>
+        <p class="info">від 250 грн</p>
+      </div>
+      <img src="https://cdn-media.choiceqr.com/prod-eat-capodimonte/menu/jtUJPJV-RMkoJbK-KmTUUTd.webp" 
+           alt="potato" 
+           style="width:390px; height:300px; border-radius: 10px;">
+    </div>
+
+         <div class="overlay-box1">
+      <div class="text-column">
+        <p class="info1">Тортелліні</p>
+        <p class="info">від 340 грн</p>
+      </div>
+      <img src="https://images.pexels.com/photos/24186311/pexels-photo-24186311.jpeg" 
+           alt="tortelini" 
+           style="width:370px; height:300px; border-radius: 10px;">
+    </div>
+
+     <div class="overlay-box1 small">
+      <div class="text-column">
+        <p class="info1">Феттучіні Альфредо</p>
+        <p class="info">від 480 грн</p>
+      </div>
+      <img src="https://images.pexels.com/photos/15352335/pexels-photo-15352335.jpeg" 
+           alt="fetuchini" 
+           style="width:250px; height:300px; border-radius: 10px;">
+     </div>
+
+     <div class="overlay-box">
+      <div class="text-column">
+        <p class="info1">Канолі</p>
+        <p class="info">від 75 грн</p>
+      </div>
+      <img src="https://images.pexels.com/photos/7474117/pexels-photo-7474117.jpeg" 
+           alt="canoli" 
+           style="width:300px; height:240px; border-radius: 10px;">
+     </div>
+
+     <div class="overlay-box1 small">
+      <div class="text-column">
+        <p class="info1">Брускетта</p>
+        <p class="info">від 180 грн</p>
+      </div>
+      <img src="https://emilybites.com/wp-content/uploads/2023/11/Tomato-and-Goat-Cheese-Bruschetta-5b.jpg" 
+           alt="bruscetta" 
+           style="width:250px; height:300px; border-radius: 10px;">
+     </div>
+
+     <div class="overlay-box">
+      <div class="text-column">
+        <p class="info1">Панна Кота</p>
+        <p class="info">від 125 грн</p>
+      </div>
+      <img src="https://www.giallozafferano.com/images/278-27805/Coffee-Panna-Cotta_1200x800.jpg" 
+           alt="panacota" 
+           style="width:300px; height:200px; border-radius: 10px;">
+     </div>
+  <div id="bottom"></div>
+</div>
+
+</body>
+</html>
+

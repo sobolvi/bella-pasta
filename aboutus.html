@@ -1,0 +1,122 @@
+  <!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">   
+  <title>Bella Pasta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0; 
+      font-family: 'Marmelad', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1741513543435-5334897a746d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fFVuc3BsYXNoJTIwJUUyJTgwJTkzJTIwSXRhbHklMjBXYWxscGFwZXxlbnwwfHwwfHx8MA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+   .active {
+      background-color: #5C4033;
+    }
+
+    .logo {
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      height: 35px;
+    }
+
+    #headline {
+      color: black;
+      font-size: 25px;
+      text-decoration: overline;
+      text-decoration-color: #3D2B1F;
+      font-family: 'Marmelad', sans-serif;
+            margin-top: 80px;
+      text-align: center;
+    }
+
+.overlay-box {
+  background: rgba(255, 255, 255, 0.7);
+  width: 1100px;
+  min-height: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 120px auto 60px auto; 
+  position: relative; 
+}
+    .info1 {
+      color: black;
+      font-size: 18px;
+      font-family: "Courier New", Courier, monospace;
+      text-align: left;
+    }
+
+    .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-left: 25px;
+  gap: 10px;
+  margin-right: 20px;
+}
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="new-file-2.html">Головна</a></li>
+    <li><a href="restaurants.html">Ресторани</a></li>
+    <li><a class="active" href= "aboutus.html">Про нас</a></li>    
+    <li><a href="ourmenu.html">Меню</a></li>
+    <li><a href="contact.html">Контакти</a></li>
+    <img src="logo.png" alt="Bella Pasta" class="logo">
+  </ul>
+
+
+<div class="overlay-box">
+  <div class="text">
+      <p id="headline"><i>"Про нас"</i></p>
+    <div class="info1"><i>Ласкаво просимо до Bella Pasta — місця, де оживає справжній смак Італії!
+Наша історія почалася з любові до автентичної італійської кухні, її традицій, ароматів і теплоти. Ми відкрили Bella Pasta, щоб дарувати людям не просто їжу, а емоції, атмосферу й душевний комфорт — так, як це прийнято в італійських тратторіях.
+Ми віримо, що кожна страва має історію. І ми щодня готуємо з душею, використовуючи свіжі інгредієнти, справжні італійські спеції та власні рецепти, щоб ви відчули смак Італії у кожному шматочку.
+Інтер’єр нашого закладу поєднує теплу атмосферу затишку, дерев’яні елементи, зелені акценти та відкриту кухню, де ви можете спостерігати за народженням кожної страви.
+Bella Pasta — це не просто ресторан. Це сім’я, в якій ви завжди бажаний гість.</i>
+</div>
+</div>
+  <img src="restaurantinside.png" alt="restaurantinside" style="width:375px; height:400px; border-radius: 10px;">
+</div>
+  <div id="bottom"></div>
+</body>
+</html>

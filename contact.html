@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">   
+  <title>Bella Pasta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0; 
+      font-family: 'Marmelad', sans-serif;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #5C4033; 
+      color: white;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #5C4033;
+    }
+
+    .logo {
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      height: 35px;
+    }
+
+    #headline {
+      color: white;
+      font-size: 25px;
+      text-decoration: overline;
+      text-decoration-color: #3D2B1F;
+      font-family: 'Marmelad', sans-serif;
+      margin-top: 80px;
+      text-align: center;
+    }
+
+    .info1 {
+      color: white;
+      font-size: 18px;
+      font-family: "Courier New", Courier, monospace;
+      text-align: left;
+      padding: 20px;
+      max-width: 700px;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      padding-left: 25px;
+      gap: 10px;
+      margin-right: 20px;
+    }
+
+    .feedback-section {
+      margin-top: 40px;
+      padding: 20px;
+    }
+
+    .feedback-button {
+      background-color: #3D2B1F ;
+      color: black;
+      font-weight: bold;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="new-file-2.html">Home</a></li>
+    <li><a href="aboutus.html">Про нас</a></li>
+    <li><a href="restaurants.html">Ресторани</a></li>
+    <li><a href="ourmenu.html">Меню</a></li>
+    <li><a class="active" href="contact.html">Контакти</a></li>
+    <img src="logo.png" alt="Bella Pasta" class="logo">
+  </ul>
+
+  <div class="text">
+    <p id="headline"><i>Наші контакти</i></p>
+    <div class="info1">
+      <p><strong>Адреса головного ресторану:</strong><br>
+      м. Київ, вул. Смачна, 12А</p>
+
+      <p><strong>Телефон для замовлень:</strong><br>
+      +38 (067) 123-45-67</p>
+
+      <p><strong>Email:</strong><br>
+      bella.pasta@email.com</p>
+
+      <p><strong>Графік роботи:</strong><br>
+      Пн–Нд: 10:00 — 23:00</p>
+
+      <p><strong>Доставка:</strong><br>
+      Щоб зробити замовлення, телефонуйте нам або пишіть :<br>
+       <a href="bella.pasta@email.com" target="_blank" style="color:  #3D2B1F;">@bellapasta_bot</a></p>
+    </div>
+  </div>
+
+  <div class="feedback-section">
+    <h2>Залишити відгук про Bella Pasta</h2>
+    <button class="feedback-button" onclick="startFeedback()">Залишити відгук</button>
+  </div>
+
+  <script>
+    function startFeedback() {
+      let feedback = prompt("Напишіть ваш відгук про наш сервіс або піцу:");
+
+      if (!feedback || feedback.trim() === "") {
+        alert("Будь ласка, напишіть щось :)");
+      } else {
+        alert("Дякуємо за відгук!Нам це дуже важливо!");
+      }
+    }
+  </script>
+
+  <div id="bottom"></div>
+</body>
+</html>

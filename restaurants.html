@@ -1,0 +1,160 @@
+ <!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">   
+  <title>Bella Pasta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #5C4033; 
+      font-family: 'Marmelad', sans-serif;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #5C4033;
+    }
+
+    .logo {
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      height: 35px;
+    }
+
+    #headline {
+      color: #ededed;
+      font-size: 25px;
+      text-decoration: overline;
+      text-decoration-color: #3D2B1F;
+      font-family: 'Marmelad', sans-serif;
+            margin-top: 80px;
+      text-align: center;
+    }
+
+    .overlay-box {
+      background: rgba(255, 255, 255, 0.2);
+      width: 1100px;
+      height: 450px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      margin: 30px auto 60px auto;
+    }
+   .adress {
+      color: #ededed;
+      font-size: 29px;
+      font-family: 'Fira Code', monospace;
+      text-align: left;
+    }
+    .info {
+      color: #ededed;
+      font-size: 15px;
+      font-family: "Courier New", Courier, monospace;
+      text-align: left;
+    }
+    .info1 {
+      color: #ededed;
+      font-size: 17px;
+      font-family: "Courier New", Courier, monospace;
+      text-align: left;
+    }
+
+    #bottom {
+      height: 50px;
+      background-color: #5C4033;
+    }
+    .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-left: 25px;
+  gap: 10px;
+  margin-right: 20px;
+}
+  </style>
+</head>
+
+<body>
+
+  <ul>
+    <li><a href="new-file-2.html">Головна</a></li>
+    <li><a class="active" href="restaurants.html">Ресторани</a></li>
+    <li><a href="aboutus.html">Про нас</a></li>
+    <li><a href="ourmenu.html">Меню</a></li>
+    <li><a href="contact.html">Контакти</a></li>
+    <img src="logo.png" alt="Bella Pasta" class="logo">
+  </ul>
+  <p id="headline"><i>Наші ресторани</i></p>
+<div class="overlay-box">
+  <div class="text">
+    <div class="adress"><strong style="text-decoration: underline; text-decoration-color: #3D2B1F;">м. Київ, вул. Велика Васильківська, 67</strong></div>
+    <div class="info">Час роботи: Пн-Нд: 10:00–23:00</div>
+    <div class="info">Телефон: 0 (97) 345 67 89</div>
+    <div class="info">Сніданки з 10:00 до 12:30</div>
+    <div class="info">Піца доступна з 11:00</div>
+    <div class="info1"><i>Bella Pasta — це затишна італійська піцерія в самому серці Києва, де справжній смак Італії зустрічає сучасний міський стиль. Усе — від тіста до соусів — готується вручну за класичними італійськими рецептами. Інтер’єр закладу оформлений у стилі тратторії: теплі кольори, дерев’яні меблі, відкрита кухня з дров’яною піччю — усе це створює атмосферу справжнього сімейного ресторану. Головна родзинка — можливість спостерігати, як піцайоло формує піцу просто перед вами.</i></div>
+  </div>
+  <img src="restaurantinside.png" alt="restaurantinside" style="width:375px; height:400px; border-radius: 10px;">
+</div>
+
+<div class="overlay-box">
+  <div class="text">
+    <div class="adress"><strong style="text-decoration: underline; text-decoration-color: #3D2B1F;">м. Львів, пл. Ринок, 10</strong></div>
+    <div class="info">Час роботи: Пн-Нд: 09:00–22:00</div>
+    <div class="info">Телефон: 0 (50) 123 45 67</div>
+    <div class="info">Сніданки з 09:00 до 12:00</div>
+    <div class="info">Піца доступна з 10:00</div>
+    <div class="info1"><i>Bella Pasta у Львові — це атмосферна піцерія в самому серці старого міста, де поєднуються традиції італійської кухні з неповторною львівською гостинністю. Інтер’єр витриманий у теплих кольорах із елементами дерев’яних меблів та затишного освітлення, що створює ідеальне місце для сімейних зустрічей і вечорів із друзями. Особливість закладу — відкритий простір кухні, де можна спостерігати за мистецтвом приготування піци на дровах.</i></div>
+  </div>
+  <img src="secondrestaurant.png" alt="secondrestaurant" style="width:375px; height:400px; border-radius: 10px;">
+</div>
+
+<div class="overlay-box">
+  <div class="text">
+    <div class="adress"><strong style="text-decoration: underline; text-decoration-color: #3D2B1F;">м. Харків, вул. Сумська, 12</strong></div>
+    <div class="info">Час роботи: Пн-Нд: 10:00–22:30</div>
+    <div class="info">Телефон: 0 (57) 789 01 23</div>
+    <div class="info">Сніданки з 09:30 до 12:00</div>
+    <div class="info">Піца доступна з 10:30</div>
+    <div class="info1"><i>Bella Pasta у Харкові — сучасна піцерія, яка поєднує італійські традиції з енергією великого міста. Стильний інтер’єр із відкритою кухнею, де гості можуть спостерігати за майстерністю піцайоло, створює дружню та затишну атмосферу. В меню — класичні італійські рецепти, приготовані з натуральних інгредієнтів і великою любов’ю.</i></div>
+  </div>
+  <img src="kharkivrestaurant.png" alt="kharkivrestaurant" style="width:375px; height:400px; border-radius: 10px;">
+</div>
+
+  <div id="bottom"></div>
+</body>
+</html>
